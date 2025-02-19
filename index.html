@@ -10,15 +10,49 @@
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-image: url('3251.jpg'); /* Replace with your image path */
             background-size: cover; /* Cover the entire background */
             background-position: center; /* Center the background image */
             color: white; /* Change text color for better contrast */
         }
+        .navbar {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 10px 20px; /* Padding around the navbar */
+        }
+        .navbar img {
+            height: 50px; /* Set the height of the logo */
+            margin-right: 20px; /* Space between logo and title */
+        }
+        .navbar h1 {
+            color: #b8b390; /* Gold color for the title */
+            margin: 0; /* Remove default margin */
+        }
+        .nav-links {
+            list-style: none; /* Remove bullet points */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Use flexbox for links */
+            margin-left: auto; /* Push links to the right */
+        }
+        .nav-links li {
+            margin-left: 20px; /* Space between links */
+        }
+        .nav-links a {
+            color: white; /* White text color */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 15px; /* Padding for links */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+        }
         .container {
             max-width: 800px; /* Maximum width for the content */
-            margin: 0 auto; /* Center the container */
+            margin: 20px auto; /* Center the container */
             padding: 20px; /* Padding around the content */
             background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for the container */
             border-radius: 10px; /* Rounded corners */
@@ -44,11 +78,11 @@
             white-space: pre-wrap; /* Wrap long lines */
             margin-bottom: 20px; /* Space below the lyrics */
             font-size: 1em; /* Font size for lyrics */
-            border: 1px solid #55b614; /* Gold border for the lyrics section */
+            border: 1px solid #0d110b; /* Border for the lyrics section */
         }
         a {
             display: inline-block; /* Make links behave like buttons */
-            background-color: #099e2b; /* Bright blue for links */
+            background-color: #12cf0c; /* Button color */
             color: white; /* White text color */
             padding: 10px 20px; /* Padding for the button */
             border-radius: 5px; /* Rounded corners */
@@ -59,7 +93,7 @@
             font-weight: bold; /* Bold text for buttons */
         }
         a:hover {
-            background-color: #05c64f; /* Darker blue on hover */
+            background-color: #061009; /* Darker color on hover */
             transform: scale(1.05); /* Slightly enlarge button on hover */
         }
         img {
@@ -75,8 +109,8 @@
             margin-top: 20px; /* Space above footer */
         }
         hr {
-            border: 1px solid #0ba7ce; /* Gold color for horizontal rule */
-            margin: 20px 0; /* Space around horizontal rule */
+            border: 1px solid #0ba7ce; 
+            margin: 20px 0; 
         }
     </style>
     <script>
@@ -88,10 +122,27 @@
                 lyrics.style.display = 'none';
             }
         }
+        function showAlert() {
+            alert('Uwu Bakekong ya yo! HAHA');
+        }
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                body.style.backgroundColor = '#121212'; // Dark background
+                body.style.color = '#ffffff'; // Light text
+            } else {
+                body.style.backgroundColor = ''; // Reset to default
+                body.style.color = ''; // Reset to default
+            }
+        }
     </script>
 </head>
 <body>
+    <nav class="navbar">
+        <img src="pngtree-bong-and-weed-cartoon-png-image_8535712.png" alt="Logo" />
     <div class="container">
+        <div class="main-content">
         <h1>Hassle Webpage</h1>
         <pre><i>
         <h2>High Minds</h2></i>
@@ -179,4 +230,4 @@
         </footer>
     </div>
 </body>
-</html>
+</html> 
